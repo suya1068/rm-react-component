@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component width와 height이 설정되었다면, inline-style로 데이터를 설정한다. 1`] = `
+<button
+  className="u-button"
+  styles={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component width와 height이 설정되었다면, inline-style로 데이터를 설정한다. 2`] = `
+<button
+  className="u-button"
+  styles={
+    Object {
+      "height": "50px",
+      "width": "200px",
+    }
+  }
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component width와 style속성 width과 중복된다면, width값이 설정된다. 1`] = `
+<button
+  className="u-button"
+  styles={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 기본속성을 설정한다. 1`] = `
+<button
+  autoFocus={true}
+  className="u-button text-center"
+  onClick={[Function]}
+  styles={
+    Object {
+      "backgroundColor": "black",
+      "width": "100px",
+    }
+  }
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 랜더링한다. 1`] = `
+<button
+  className="u-button"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 사이즈를 설정한다. 1`] = `
+<button
+  className="u-button u-button-tiny"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 사이즈를 설정한다. 2`] = `
+<button
+  className="u-button u-button-small"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 사이즈를 설정한다. 3`] = `
+<button
+  className="u-button u-button-large"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 사이즈를 설정한다. 4`] = `
+<button
+  className="u-button u-button-big"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 테마를 설정한다. 1`] = `
+<button
+  className="u-button u-button-primary"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 테마를 설정한다. 2`] = `
+<button
+  className="u-button u-button-secondary"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 테마를 설정한다. 3`] = `
+<button
+  className="u-button u-button-positive"
+>
+  버튼
+</button>
+`;
+
+exports[`Button Component 테마를 설정한다. 4`] = `
+<button
+  className="u-button u-button-negative"
+>
+  버튼
+</button>
+`;

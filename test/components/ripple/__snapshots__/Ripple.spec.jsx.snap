@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ripple Component 랜더링한다. 1`] = `
+<div
+  className="u-ripple"
+  onAnimationEnd={[Function]}
+  onClick={[Function]}
+>
+  <div
+    className="u-ripple-circle"
+  />
+</div>
+`;
+
+exports[`Ripple Component 클릭하면, 잔물결 모양을 보여준 후 300ms 후 사라진다. 잔물결 모양을 보여준다. 1`] = `
+<div
+  className="u-ripple is-active"
+  onAnimationEnd={[Function]}
+  onClick={[Function]}
+>
+  <div
+    className="u-ripple-circle"
+  />
+</div>
+`;
+
+exports[`Ripple Component 클릭하면, 잔물결 모양을 보여준 후 300ms 후 사라진다. 잔물결 모양을 숨긴다. 1`] = `
+<div
+  className="u-ripple"
+  onAnimationEnd={[Function]}
+  onClick={[Function]}
+>
+  <div
+    className="u-ripple-circle"
+  />
+</div>
+`;

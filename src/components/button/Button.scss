@@ -1,0 +1,121 @@
+$u-button-line-height: 1.5 !default;
+$u-button-padding-x: 0.85rem !default;
+$u-button-padding-y: 0.65rem !default;
+$u-button-font-size: 1rem !default;
+
+$u-button-line-height-tiny: 1.5 !default;
+$u-button-padding-x-tiny: 0.6rem !default;
+$u-button-padding-y-tiny: 0.4rem !default;
+$u-button-font-size-tiny: 0.75rem !default;
+
+$u-button-line-height-small: 1.5 !default;
+$u-button-padding-x-small: 0.725rem !default;
+$u-button-padding-y-small: 0.525rem !default;
+$u-button-font-size-small: 0.875rem !default;
+
+$u-button-line-height-large: 1.5 !default;
+$u-button-padding-x-large: 0.975rem !default;
+$u-button-padding-y-large: 0.775rem !default;
+$u-button-font-size-large: 1.125rem !default;
+
+$u-button-line-height-big: 1.5 !default;
+$u-button-padding-x-big: 1.1rem !default;
+$u-button-padding-y-big: 0.9rem !default;
+$u-button-font-size-big: 1.25rem !default;
+
+$u-button-border-radius: 2px;
+$u-button-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+$u-button-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+
+$u-button-primary: #0866C6;
+$u-button-primary-active: #0753a1;
+$u-button-secondary: #868e96;
+$u-button-secondary-active: #767B84;
+$u-button-positive: #21ba45;
+$u-button-positive-active: #16ab39;
+$u-button-negative: #dc3545;
+$u-button-negative-active: #c82333;
+$u-button-info: #17a2b8;
+$u-button-info-active: #138496;
+$u-button-dark: #343a40;
+$u-button-dark-active: #23272b;
+
+@mixin button-theme-modifier($color, $class) {
+    &-#{$class} {
+        background: $color;
+        color: #fff;
+
+        &:hover {
+          background: darken($color, 5%);
+        }
+    }
+}
+
+.u-button {
+    position: relative;
+    display: inline-block;
+    min-height: 1em;
+    padding: $u-button-padding-y $u-button-padding-x;
+    background-color: #e0e1e2;
+    background-image: none;
+    border: none;
+    border-radius: $u-button-border-radius;
+    box-shadow: $u-button-box-shadow;
+    line-height: $u-button-line-height;
+    vertical-align: baseline;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: $u-button-font-family;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
+
+    outline: 0;
+    user-select: none;
+    cursor: pointer;
+
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: #cacbcd;
+    }
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    // theme
+    @include button-theme-modifier($u-button-primary, "primary");
+    @include button-theme-modifier($u-button-secondary, "secondary");
+    @include button-theme-modifier($u-button-positive, "positive");
+    @include button-theme-modifier($u-button-negative, "negative");
+    @include button-theme-modifier($u-button-negative, "negative");
+    @include button-theme-modifier($u-button-info, "info");
+    @include button-theme-modifier($u-button-dark, "dark");
+    
+
+    &-tiny {
+        padding: $u-button-padding-y-tiny $u-button-padding-x-tiny;
+        font-size: $u-button-font-size-tiny;
+    }
+
+    &-small {
+        padding: $u-button-padding-y-small $u-button-padding-x-small;
+        font-size: $u-button-font-size-small;
+    }
+
+    &-large {
+        padding: $u-button-padding-y-large $u-button-padding-x-large;
+        font-size: $u-button-font-size-large;
+    }
+
+    &-big {
+        padding: $u-button-padding-y-big $u-button-padding-x-big;
+        font-size: $u-button-font-size-big;
+    }
+}
