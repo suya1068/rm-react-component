@@ -8,6 +8,12 @@ exports[`Ripple Component 랜더링한다. 1`] = `
 >
   <div
     className="u-ripple-circle"
+    style={
+      Object {
+        "left": "50%",
+        "top": "50%",
+      }
+    }
   />
 </div>
 `;
@@ -20,6 +26,12 @@ exports[`Ripple Component 클릭하면, 잔물결 모양을 보여준 후 300ms 
 >
   <div
     className="u-ripple-circle"
+    style={
+      Object {
+        "left": "50%",
+        "top": "50%",
+      }
+    }
   />
 </div>
 `;
@@ -32,6 +44,30 @@ exports[`Ripple Component 클릭하면, 잔물결 모양을 보여준 후 300ms 
 >
   <div
     className="u-ripple-circle"
+    style={
+      Object {
+        "left": "50%",
+        "top": "50%",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Ripple Component 클릭하면, 잔물결 모양을 보여준 후 300ms 후 사라진다. 잔물결 시작 위치를 설정한다. 1`] = `
+<div
+  className="u-ripple"
+  onAnimationEnd={[Function]}
+  onClick={[Function]}
+>
+  <div
+    className="u-ripple-circle"
+    style={
+      Object {
+        "left": "50px",
+        "top": "50px",
+      }
+    }
   />
 </div>
 `;
