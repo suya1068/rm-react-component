@@ -1,9 +1,8 @@
 import "./Ripple.scss";
 import classnames from "classnames";
 import React, { Component } from "react";
+import RMD from "rm-dom";
 import { autobind } from "core-decorators";
-
-import dom from "src/utils/dom";
 
 @autobind
 class Ripple extends Component {
@@ -16,8 +15,8 @@ class Ripple extends Component {
     };
 
     onClick(event) {
-        const { x, y } = dom.position(dom.parent(event.target));
-        this.setLocation({ left: event.pageX - x, top: event.pageY - y });
+        const { top, left } = RMD.offset(RMD.parent(event.target));
+        this.setLocation({ top: event.pageY - top, left: event.pageX - left });
         this.show();
     }
 
