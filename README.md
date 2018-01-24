@@ -1,4 +1,5 @@
-# rm-react-component
+# RM React Component [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![CircleCI](https://circleci.com/gh/metocherry/rm-react-component.svg?style=shield)](https://circleci.com/gh/metocherry/rm-react-component)
+
 react component with jest.
 
 ## Tools
