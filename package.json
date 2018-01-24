@@ -62,7 +62,7 @@
     "react-dom": "^16.2.0",
     "react-hot-loader": "^3.0.0",
     "react-router-dom": "^4.2.2",
-    "rm-dom": "^0.0.1"
+    "rm-dom": "^0.0.2"
   },
   "engines": {
     "node": ">=8.9.3"

@@ -5905,9 +5905,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^2.0.0"
     inherits "^2.0.1"
 
-rm-dom@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/rm-dom/-/rm-dom-0.0.1.tgz#bc8f30f9850b0137570096c7ab7c050f32ee55ae"
+rm-dom@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/rm-dom/-/rm-dom-0.0.2.tgz#f3c2b79461eb0404143ae389d5cb2e837f22aa95"
 
 rst-selector-parser@^2.2.3:
   version "2.2.3"
